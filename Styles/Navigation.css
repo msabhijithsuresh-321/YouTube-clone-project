@@ -1,0 +1,49 @@
+.category-bar{
+    position: fixed;
+    top: 56px;
+    left: 72px;
+    right: 0;
+
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 24px;
+
+    background-color: white;
+
+    overflow-x: auto;
+    white-space: nowrap;
+
+    z-index: 99;
+}
+
+.category-bar::-webkit-scrollbar{
+    display: none;
+}
+
+.category{
+    border: none;
+    background-color: rgb(242,242,242);
+    border-radius: 8px;
+
+    padding: 8px 14px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.category:hover{
+    background-color: rgb(229,229,229);
+}
+
+.active{
+    background-color: black;
+    color: white;
+}

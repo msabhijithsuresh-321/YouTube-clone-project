@@ -1,0 +1,217 @@
+.header{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(210, 210, 210);
+    z-index: 100;
+
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.right-section{
+width: 225px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: 20px;
+flex-shrink: 0;
+
+}
+.middle-section{
+flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+    margin-left: 70px;
+    margin-right: 35px;
+ 
+}
+.menu{
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.yt-logo{
+height: 20px;
+cursor: pointer;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-left: 12px;
+    border-radius: 20px;
+}
+.search-logo{
+    height: 24px;
+}
+.search-button{
+    width: 64px;
+    height: 40px;
+
+    border: 1px solid rgb(204,204,204);
+
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(248,248,248);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+.search-bar::placeholder{
+    font-size: 18px;
+  
+}
+.search-bar{
+    flex: 1;
+    width: 169.677px;
+    height: 40px;
+    outline: none;
+    border-style: solid;
+    border-radius: 20px 0 0 20px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left:  20px;
+}
+.bell{
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+.create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 36px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 18px;
+    background: #f2f2f2;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.user-profile{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    cursor:pointer;
+}
+.notification-button{
+    position: relative;
+    border: none;
+    background-color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+.notification-count{
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    background-color: rgb(183, 38, 38);
+    color: white;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+.search-button .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    margin-top: 29px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px; 
+    padding-right: 8px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip{
+    opacity: 1;
+   
+}
+
+.voice-search-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voice-search-button .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    position:absolute;
+    bottom:-55px;
+    left:50%;
+    transform:translateX(-50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px; 
+    padding-right: 8px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+
+.notification-button .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px; 
+    padding-right: 8px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.notification-button:hover .tooltip{
+    opacity: 1;
+} 
+.search-bar,
+.search-button{
+    box-sizing: border-box;
+}
+
